@@ -6,6 +6,14 @@
 [![Sensitivity](https://img.shields.io/badge/Sensitivity-0.8405-blue)](models/7CH_v2_Archive/)
 [![Framework](https://img.shields.io/badge/Framework-nnUNet%20v2-orange)](https://github.com/MIC-DKFZ/nnUNet)
 
+## 📥 Model Checkpoint Download
+
+**[⬇️ Download checkpoint_best.pth (256 MB) from Google Drive](https://drive.google.com/file/d/1FwVudko_dRzriAuUmhcnebiN8z25ekLE/view?usp=sharing)**
+
+- **File Size**: 256 MB
+- **Performance**: Overall Dice 0.8575, Sensitivity 0.8405
+- **Installation**: Place in `models/7CH_v2_Archive/checkpoint_best.pth`
+
 ---
 
 ## 📌 Overview
