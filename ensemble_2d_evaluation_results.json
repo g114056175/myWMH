@@ -1,0 +1,122 @@
+{
+  "method": "2D Ensemble (Models 3-5) + TTA",
+  "models_used": [
+    3,
+    4,
+    5
+  ],
+  "num_models": 3,
+  "individual_results": [
+    {
+      "case_id": "Amsterdam_GE1T5_150",
+      "3d_dice": 0.7625448028639671,
+      "3d_sensitivity": 0.8326810176043768,
+      "3d_specificity": 0.9998936006890141,
+      "3d_precision": 0.7033057851181546,
+      "tp": 851,
+      "fp": 359,
+      "fn": 171
+    },
+    {
+      "case_id": "Amsterdam_GE1T5_151",
+      "3d_dice": 0.8937510700219504,
+      "3d_sensitivity": 0.8874005575570222,
+      "3d_specificity": 0.9995693961159917,
+      "3d_precision": 0.9001931300862875,
+      "tp": 13051,
+      "fp": 1447,
+      "fn": 1656
+    },
+    {
+      "case_id": "Amsterdam_GE1T5_152",
+      "3d_dice": 0.8128418549326687,
+      "3d_sensitivity": 0.9531511433298765,
+      "3d_specificity": 0.9997915994107837,
+      "3d_precision": 0.7085406301794837,
+      "tp": 1709,
+      "fp": 703,
+      "fn": 84
+    },
+    {
+      "case_id": "Amsterdam_GE1T5_153",
+      "3d_dice": 0.41666666665943286,
+      "3d_sensitivity": 0.3225806451526188,
+      "3d_specificity": 0.9999751091345891,
+      "3d_precision": 0.5882352940888119,
+      "tp": 120,
+      "fp": 84,
+      "fn": 252
+    },
+    {
+      "case_id": "Amsterdam_GE1T5_154",
+      "3d_dice": 0.8532565210420016,
+      "3d_sensitivity": 0.9631502890138615,
+      "3d_specificity": 0.9997583277585597,
+      "3d_precision": 0.7658718758955304,
+      "tp": 2666,
+      "fp": 815,
+      "fn": 102
+    },
+    {
+      "case_id": "Amsterdam_GE1T5_155",
+      "3d_dice": 0.8275937705628124,
+      "3d_sensitivity": 0.9024156900241511,
+      "3d_specificity": 0.9996546939814378,
+      "3d_precision": 0.7642292890403803,
+      "tp": 3773,
+      "fp": 1164,
+      "fn": 408
+    },
+    {
+      "case_id": "Amsterdam_GE1T5_156",
+      "3d_dice": 0.6925021061441239,
+      "3d_sensitivity": 0.8286290322413583,
+      "3d_specificity": 0.9999170273999203,
+      "3d_precision": 0.5947901591809727,
+      "tp": 411,
+      "fp": 280,
+      "fn": 85
+    },
+    {
+      "case_id": "Amsterdam_GE1T5_157",
+      "3d_dice": 0.706666666650963,
+      "3d_sensitivity": 0.8324607329407089,
+      "3d_specificity": 0.9999694137315799,
+      "3d_precision": 0.6138996138759112,
+      "tp": 159,
+      "fp": 100,
+      "fn": 32
+    },
+    {
+      "case_id": "Amsterdam_GE1T5_158",
+      "3d_dice": 0.7521088435353684,
+      "3d_sensitivity": 0.7652270210367375,
+      "3d_specificity": 0.9998509712573406,
+      "3d_precision": 0.7394328517884461,
+      "tp": 1382,
+      "fp": 487,
+      "fn": 424
+    },
+    {
+      "case_id": "Amsterdam_GE1T5_159",
+      "3d_dice": 0.8383859797888217,
+      "3d_sensitivity": 0.8841854225653836,
+      "3d_specificity": 0.9995372247521594,
+      "3d_precision": 0.7970975544197836,
+      "tp": 5932,
+      "fp": 1510,
+      "fn": 777
+    }
+  ],
+  "average_metrics": {
+    "3d_dice": 0.755631828220211,
+    "3d_dice_std": 0.12854874318980436,
+    "3d_sensitivity": 0.8171881551466095,
+    "3d_sensitivity_std": 0.17447456810741235,
+    "3d_specificity": 0.9997917364231377,
+    "3d_specificity_std": 0.00015128975235066786,
+    "3d_precision": 0.7175596183673763,
+    "3d_precision_std": 0.09354083867657716
+  },
+  "num_cases": 10
+}

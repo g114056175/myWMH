@@ -1,0 +1,262 @@
+{
+    "dataset_name": "Dataset003_WMH_7CH",
+    "plans_name": "nnUNetPlans",
+    "original_median_spacing_after_transp": [
+        999.0,
+        0.976599931716919,
+        1.0
+    ],
+    "original_median_shape_after_transp": [
+        1,
+        256,
+        232
+    ],
+    "image_reader_writer": "SimpleITKIO",
+    "transpose_forward": [
+        0,
+        1,
+        2
+    ],
+    "transpose_backward": [
+        0,
+        1,
+        2
+    ],
+    "configurations": {
+        "2d": {
+            "data_identifier": "nnUNetPlans_2d",
+            "preprocessor_name": "DefaultPreprocessor",
+            "batch_size": 49,
+            "patch_size": [
+                256,
+                256
+            ],
+            "median_image_size_in_voxels": [
+                256.0,
+                230.0
+            ],
+            "spacing": [
+                0.976599931716919,
+                1.0
+            ],
+            "normalization_schemes": [
+                "ZScoreNormalization",
+                "ZScoreNormalization",
+                "ZScoreNormalization",
+                "ZScoreNormalization",
+                "ZScoreNormalization",
+                "ZScoreNormalization",
+                "ZScoreNormalization"
+            ],
+            "use_mask_for_norm": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "resampling_fn_data": "resample_data_or_seg_to_shape",
+            "resampling_fn_seg": "resample_data_or_seg_to_shape",
+            "resampling_fn_data_kwargs": {
+                "is_seg": false,
+                "order": 3,
+                "order_z": 0,
+                "force_separate_z": null
+            },
+            "resampling_fn_seg_kwargs": {
+                "is_seg": true,
+                "order": 1,
+                "order_z": 0,
+                "force_separate_z": null
+            },
+            "resampling_fn_probabilities": "resample_data_or_seg_to_shape",
+            "resampling_fn_probabilities_kwargs": {
+                "is_seg": false,
+                "order": 1,
+                "order_z": 0,
+                "force_separate_z": null
+            },
+            "architecture": {
+                "network_class_name": "dynamic_network_architectures.architectures.unet.PlainConvUNet",
+                "arch_kwargs": {
+                    "n_stages": 7,
+                    "features_per_stage": [
+                        32,
+                        64,
+                        128,
+                        256,
+                        512,
+                        512,
+                        512
+                    ],
+                    "conv_op": "torch.nn.modules.conv.Conv2d",
+                    "kernel_sizes": [
+                        [
+                            3,
+                            3
+                        ],
+                        [
+                            3,
+                            3
+                        ],
+                        [
+                            3,
+                            3
+                        ],
+                        [
+                            3,
+                            3
+                        ],
+                        [
+                            3,
+                            3
+                        ],
+                        [
+                            3,
+                            3
+                        ],
+                        [
+                            3,
+                            3
+                        ]
+                    ],
+                    "strides": [
+                        [
+                            1,
+                            1
+                        ],
+                        [
+                            2,
+                            2
+                        ],
+                        [
+                            2,
+                            2
+                        ],
+                        [
+                            2,
+                            2
+                        ],
+                        [
+                            2,
+                            2
+                        ],
+                        [
+                            2,
+                            2
+                        ],
+                        [
+                            2,
+                            2
+                        ]
+                    ],
+                    "n_conv_per_stage": [
+                        2,
+                        2,
+                        2,
+                        2,
+                        2,
+                        2,
+                        2
+                    ],
+                    "n_conv_per_stage_decoder": [
+                        2,
+                        2,
+                        2,
+                        2,
+                        2,
+                        2
+                    ],
+                    "conv_bias": true,
+                    "norm_op": "torch.nn.modules.instancenorm.InstanceNorm2d",
+                    "norm_op_kwargs": {
+                        "eps": 1e-05,
+                        "affine": true
+                    },
+                    "dropout_op": null,
+                    "dropout_op_kwargs": null,
+                    "nonlin": "torch.nn.LeakyReLU",
+                    "nonlin_kwargs": {
+                        "inplace": true
+                    }
+                },
+                "_kw_requires_import": [
+                    "conv_op",
+                    "norm_op",
+                    "dropout_op",
+                    "nonlin"
+                ]
+            },
+            "batch_dice": true
+        }
+    },
+    "experiment_planner_used": "ExperimentPlanner",
+    "label_manager": "LabelManager",
+    "foreground_intensity_properties_per_channel": {
+        "0": {
+            "max": 1.0,
+            "mean": 0.34448540656916204,
+            "median": 0.3089594841003418,
+            "min": 0.0,
+            "percentile_00_5": 0.06692679226398468,
+            "percentile_99_5": 0.8426095247268677,
+            "std": 0.15192768258768094
+        },
+        "1": {
+            "max": 1.0,
+            "mean": 0.4021286177068305,
+            "median": 0.3485576808452606,
+            "min": 0.01812625303864479,
+            "percentile_00_5": 0.17683586478233337,
+            "percentile_99_5": 0.8636347055435181,
+            "std": 0.15839705149660235
+        },
+        "2": {
+            "max": 1.0,
+            "mean": 0.3479247486951256,
+            "median": 0.312007874250412,
+            "min": 0.0,
+            "percentile_00_5": 0.06973177194595337,
+            "percentile_99_5": 0.8440494537353516,
+            "std": 0.14799798608010456
+        },
+        "3": {
+            "max": 0.543461263179779,
+            "mean": 0.2713378718805079,
+            "median": 0.2687833309173584,
+            "min": 0.022293927147984505,
+            "percentile_00_5": 0.10631228983402252,
+            "percentile_99_5": 0.4557885229587555,
+            "std": 0.07383869602310422
+        },
+        "4": {
+            "max": 1.0,
+            "mean": 0.6475143520623065,
+            "median": 0.6235294342041016,
+            "min": 0.01568627543747425,
+            "percentile_00_5": 0.3490196168422699,
+            "percentile_99_5": 0.9764705896377563,
+            "std": 0.1392562141059272
+        },
+        "5": {
+            "max": 1.0,
+            "mean": 0.3176451105740952,
+            "median": 0.2753368020057678,
+            "min": 0.0,
+            "percentile_00_5": 0.06301715970039368,
+            "percentile_99_5": 0.8836839199066162,
+            "std": 0.17976138492131086
+        },
+        "6": {
+            "max": 1.0,
+            "mean": 0.5407602478810963,
+            "median": 0.520915150642395,
+            "min": 0.011952077969908714,
+            "percentile_00_5": 0.31810319423675537,
+            "percentile_99_5": 0.9125442504882812,
+            "std": 0.12248448922568018
+        }
+    }
+}

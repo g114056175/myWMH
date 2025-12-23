@@ -1,0 +1,71 @@
+{
+  "models": [
+    {
+      "model_id": 1,
+      "loss_type": "BCE",
+      "total_epochs": 22,
+      "best_epoch": 2,
+      "best_val_dice": 0.015049288283735222,
+      "best_val_sensitivity": 0.16565202285535632,
+      "best_val_precision": 0.009699906944642862,
+      "final_train_dice": 0.00018838304094970226,
+      "final_val_dice": 0.0
+    },
+    {
+      "model_id": 2,
+      "loss_type": "Focal",
+      "total_epochs": 21,
+      "best_epoch": 1,
+      "best_val_dice": 0.004083244274952449,
+      "best_val_sensitivity": 0.004847428364446387,
+      "best_val_precision": 0.005037040244787932,
+      "final_train_dice": 0.00033575636816435847,
+      "final_val_dice": 0.0
+    },
+    {
+      "model_id": 3,
+      "loss_type": "Dice",
+      "total_epochs": 134,
+      "best_epoch": 114,
+      "best_val_dice": 0.3640403892099857,
+      "best_val_sensitivity": 0.377037096619606,
+      "best_val_precision": 0.3796022967249155,
+      "final_train_dice": 0.7616373464978975,
+      "final_val_dice": 0.3624695709347725
+    },
+    {
+      "model_id": 4,
+      "loss_type": "Tversky",
+      "total_epochs": 89,
+      "best_epoch": 69,
+      "best_val_dice": 0.353258419893682,
+      "best_val_sensitivity": 0.3610219779610634,
+      "best_val_precision": 0.3706339734047651,
+      "final_train_dice": 0.7226114233334859,
+      "final_val_dice": 0.3349840863235295
+    },
+    {
+      "model_id": 5,
+      "loss_type": "Combo",
+      "total_epochs": 150,
+      "best_epoch": 146,
+      "best_val_dice": 0.3612647285312414,
+      "best_val_sensitivity": 0.3781331329792738,
+      "best_val_precision": 0.3745279511809349,
+      "final_train_dice": 0.7637729151495571,
+      "final_val_dice": 0.3593030559644103
+    }
+  ],
+  "average_val_dice": 0.21953921403871934,
+  "best_model": {
+    "model_id": 3,
+    "loss_type": "Dice",
+    "total_epochs": 134,
+    "best_epoch": 114,
+    "best_val_dice": 0.3640403892099857,
+    "best_val_sensitivity": 0.377037096619606,
+    "best_val_precision": 0.3796022967249155,
+    "final_train_dice": 0.7616373464978975,
+    "final_val_dice": 0.3624695709347725
+  }
+}

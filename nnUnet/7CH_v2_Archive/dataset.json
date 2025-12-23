@@ -1,0 +1,21 @@
+{
+  "channel_names": {
+    "0": "FLAIR_t-1",
+    "1": "FLAIR_t",
+    "2": "FLAIR_t+1",
+    "3": "T1",
+    "4": "Butterworth_cutoff15",
+    "5": "HighPass_sigma2",
+    "6": "Top-hat"
+  },
+  "labels": {
+    "background": 0,
+    "WMH": 1
+  },
+  "numTraining": 1639,
+  "file_ending": ".nii.gz",
+  "description": "WMH 7CH v2 - Butterworth(15) targeting small lesions",
+  "name": "WMH_7CH_v2",
+  "reference": "Optimized for small lesion detection",
+  "release": "2.0"
+}

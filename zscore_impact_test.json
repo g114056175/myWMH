@@ -1,0 +1,115 @@
+{
+  "test_cases": [
+    "Amsterdam_GE1T5_150",
+    "Amsterdam_GE1T5_151",
+    "Amsterdam_GE1T5_152",
+    "Amsterdam_GE1T5_153",
+    "Amsterdam_GE1T5_154"
+  ],
+  "with_zscore": [
+    {
+      "dice": 0.7625448028639671,
+      "sensitivity": 0.8326810176043768,
+      "precision": 0.7033057851181546,
+      "tp": 851,
+      "fp": 359,
+      "fn": 171,
+      "case_id": "Amsterdam_GE1T5_150"
+    },
+    {
+      "dice": 0.8937510700219504,
+      "sensitivity": 0.8874005575570222,
+      "precision": 0.9001931300862875,
+      "tp": 13051,
+      "fp": 1447,
+      "fn": 1656,
+      "case_id": "Amsterdam_GE1T5_151"
+    },
+    {
+      "dice": 0.8128418549326687,
+      "sensitivity": 0.9531511433298765,
+      "precision": 0.7085406301794837,
+      "tp": 1709,
+      "fp": 703,
+      "fn": 84,
+      "case_id": "Amsterdam_GE1T5_152"
+    },
+    {
+      "dice": 0.41666666665943286,
+      "sensitivity": 0.3225806451526188,
+      "precision": 0.5882352940888119,
+      "tp": 120,
+      "fp": 84,
+      "fn": 252,
+      "case_id": "Amsterdam_GE1T5_153"
+    },
+    {
+      "dice": 0.8532565210420016,
+      "sensitivity": 0.9631502890138615,
+      "precision": 0.7658718758955304,
+      "tp": 2666,
+      "fp": 815,
+      "fn": 102,
+      "case_id": "Amsterdam_GE1T5_154"
+    }
+  ],
+  "without_zscore": [
+    {
+      "dice": 0.0529801324498299,
+      "sensitivity": 0.027397260273704527,
+      "precision": 0.7999999997714285,
+      "tp": 28,
+      "fp": 7,
+      "fn": 994,
+      "case_id": "Amsterdam_GE1T5_150"
+    },
+    {
+      "dice": 0.0,
+      "sensitivity": 0.0,
+      "precision": 0.0,
+      "tp": 0,
+      "fp": 7,
+      "fn": 14707,
+      "case_id": "Amsterdam_GE1T5_151"
+    },
+    {
+      "dice": 0.005549389567116818,
+      "sensitivity": 0.0027886224205087083,
+      "precision": 0.5555555549382716,
+      "tp": 5,
+      "fp": 4,
+      "fn": 1788,
+      "case_id": "Amsterdam_GE1T5_152"
+    },
+    {
+      "dice": 0.0,
+      "sensitivity": 0.0,
+      "precision": 0.0,
+      "tp": 0,
+      "fp": 3,
+      "fn": 372,
+      "case_id": "Amsterdam_GE1T5_153"
+    },
+    {
+      "dice": 0.02140563681761896,
+      "sensitivity": 0.010838150288978186,
+      "precision": 0.8571428568979592,
+      "tp": 30,
+      "fp": 5,
+      "fn": 2738,
+      "case_id": "Amsterdam_GE1T5_154"
+    }
+  ],
+  "summary": {
+    "with_zscore_avg": {
+      "dice": 0.7478121831040041,
+      "sensitivity": 0.7917927305315511,
+      "precision": 0.7332293430736537
+    },
+    "without_zscore_avg": {
+      "dice": 0.015987031766913136,
+      "sensitivity": 0.008204806596638284,
+      "precision": 0.4425396823215319
+    }
+  }
+}

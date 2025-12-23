@@ -1,0 +1,24 @@
+# WMH 分割訓練系統依賴項
+# Python 3.8+
+
+# 深度學習框架
+torch>=2.0.0
+torchvision>=0.15.0
+
+# 醫學影像處理
+nibabel>=5.1.0
+SimpleITK>=2.2.1
+
+# 數據增強
+albumentations>=1.3.0
+
+# 科學計算
+numpy>=1.24.0
+scipy>=1.10.0
+
+# 可視化
+matplotlib>=3.7.0
+tqdm>=4.65.0
+
+# 工具
+Pillow>=9.5.0

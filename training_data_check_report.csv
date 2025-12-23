@@ -1,0 +1,101 @@
+﻿Region,Scanner,CaseID,FullPath,FLAIR,T1,WMH,Complete,TotalFiles,Directories
+Amsterdam,GE3T,100,Amsterdam/GE3T/100,✓,✓,✓,✓,11,"orig, pre"
+Amsterdam,GE3T,101,Amsterdam/GE3T/101,✓,✓,✓,✓,11,"orig, pre"
+Amsterdam,GE3T,102,Amsterdam/GE3T/102,✓,✓,✓,✓,11,"orig, pre"
+Amsterdam,GE3T,103,Amsterdam/GE3T/103,✓,✓,✓,✓,11,"orig, pre"
+Amsterdam,GE3T,104,Amsterdam/GE3T/104,✓,✓,✓,✓,11,"orig, pre"
+Amsterdam,GE3T,105,Amsterdam/GE3T/105,✓,✓,✓,✓,11,"orig, pre"
+Amsterdam,GE3T,106,Amsterdam/GE3T/106,✓,✓,✓,✓,11,"orig, pre"
+Amsterdam,GE3T,107,Amsterdam/GE3T/107,✓,✓,✓,✓,11,"orig, pre"
+Amsterdam,GE3T,108,Amsterdam/GE3T/108,✓,✓,✓,✓,11,"orig, pre"
+Amsterdam,GE3T,109,Amsterdam/GE3T/109,✓,✓,✓,✓,11,"orig, pre"
+Amsterdam,GE3T,110,Amsterdam/GE3T/110,✓,✓,✓,✓,11,"orig, pre"
+Amsterdam,GE3T,112,Amsterdam/GE3T/112,✓,✓,✓,✓,11,"orig, pre"
+Amsterdam,GE3T,113,Amsterdam/GE3T/113,✓,✓,✓,✓,11,"orig, pre"
+Amsterdam,GE3T,114,Amsterdam/GE3T/114,✓,✓,✓,✓,11,"orig, pre"
+Amsterdam,GE3T,115,Amsterdam/GE3T/115,✓,✓,✓,✓,11,"orig, pre"
+Amsterdam,GE3T,116,Amsterdam/GE3T/116,✓,✓,✓,✓,11,"orig, pre"
+Amsterdam,GE3T,126,Amsterdam/GE3T/126,✓,✓,✓,✓,11,"orig, pre"
+Amsterdam,GE3T,132,Amsterdam/GE3T/132,✓,✓,✓,✓,11,"orig, pre"
+Amsterdam,GE3T,137,Amsterdam/GE3T/137,✓,✓,✓,✓,11,"orig, pre"
+Amsterdam,GE3T,144,Amsterdam/GE3T/144,✓,✓,✓,✓,11,"orig, pre"
+Singapore,50,orig,Singapore/50/orig,✗,✗,✗,✗,5,
+Singapore,50,pre,Singapore/50/pre,✗,✗,✗,✗,3,
+Singapore,51,orig,Singapore/51/orig,✗,✗,✗,✗,5,
+Singapore,51,pre,Singapore/51/pre,✗,✗,✗,✗,3,
+Singapore,52,orig,Singapore/52/orig,✗,✗,✗,✗,5,
+Singapore,52,pre,Singapore/52/pre,✗,✗,✗,✗,3,
+Singapore,53,orig,Singapore/53/orig,✗,✗,✗,✗,5,
+Singapore,53,pre,Singapore/53/pre,✗,✗,✗,✗,3,
+Singapore,54,orig,Singapore/54/orig,✗,✗,✗,✗,5,
+Singapore,54,pre,Singapore/54/pre,✗,✗,✗,✗,3,
+Singapore,55,orig,Singapore/55/orig,✗,✗,✗,✗,5,
+Singapore,55,pre,Singapore/55/pre,✗,✗,✗,✗,3,
+Singapore,56,orig,Singapore/56/orig,✗,✗,✗,✗,5,
+Singapore,56,pre,Singapore/56/pre,✗,✗,✗,✗,3,
+Singapore,57,orig,Singapore/57/orig,✗,✗,✗,✗,5,
+Singapore,57,pre,Singapore/57/pre,✗,✗,✗,✗,3,
+Singapore,58,orig,Singapore/58/orig,✗,✗,✗,✗,5,
+Singapore,58,pre,Singapore/58/pre,✗,✗,✗,✗,3,
+Singapore,59,orig,Singapore/59/orig,✗,✗,✗,✗,5,
+Singapore,59,pre,Singapore/59/pre,✗,✗,✗,✗,3,
+Singapore,60,orig,Singapore/60/orig,✗,✗,✗,✗,5,
+Singapore,60,pre,Singapore/60/pre,✗,✗,✗,✗,3,
+Singapore,61,orig,Singapore/61/orig,✗,✗,✗,✗,5,
+Singapore,61,pre,Singapore/61/pre,✗,✗,✗,✗,3,
+Singapore,62,orig,Singapore/62/orig,✗,✗,✗,✗,5,
+Singapore,62,pre,Singapore/62/pre,✗,✗,✗,✗,3,
+Singapore,63,orig,Singapore/63/orig,✗,✗,✗,✗,5,
+Singapore,63,pre,Singapore/63/pre,✗,✗,✗,✗,3,
+Singapore,64,orig,Singapore/64/orig,✗,✗,✗,✗,5,
+Singapore,64,pre,Singapore/64/pre,✗,✗,✗,✗,3,
+Singapore,65,orig,Singapore/65/orig,✗,✗,✗,✗,5,
+Singapore,65,pre,Singapore/65/pre,✗,✗,✗,✗,3,
+Singapore,66,orig,Singapore/66/orig,✗,✗,✗,✗,5,
+Singapore,66,pre,Singapore/66/pre,✗,✗,✗,✗,3,
+Singapore,67,orig,Singapore/67/orig,✗,✗,✗,✗,5,
+Singapore,67,pre,Singapore/67/pre,✗,✗,✗,✗,3,
+Singapore,68,orig,Singapore/68/orig,✗,✗,✗,✗,5,
+Singapore,68,pre,Singapore/68/pre,✗,✗,✗,✗,3,
+Singapore,69,orig,Singapore/69/orig,✗,✗,✗,✗,5,
+Singapore,69,pre,Singapore/69/pre,✗,✗,✗,✗,3,
+Utrecht,0,orig,Utrecht/0/orig,✗,✗,✗,✗,5,
+Utrecht,0,pre,Utrecht/0/pre,✗,✗,✗,✗,3,
+Utrecht,11,orig,Utrecht/11/orig,✗,✗,✗,✗,5,
+Utrecht,11,pre,Utrecht/11/pre,✗,✗,✗,✗,3,
+Utrecht,17,orig,Utrecht/17/orig,✗,✗,✗,✗,5,
+Utrecht,17,pre,Utrecht/17/pre,✗,✗,✗,✗,3,
+Utrecht,19,orig,Utrecht/19/orig,✗,✗,✗,✗,5,
+Utrecht,19,pre,Utrecht/19/pre,✗,✗,✗,✗,3,
+Utrecht,2,orig,Utrecht/2/orig,✗,✗,✗,✗,5,
+Utrecht,2,pre,Utrecht/2/pre,✗,✗,✗,✗,3,
+Utrecht,21,orig,Utrecht/21/orig,✗,✗,✗,✗,5,
+Utrecht,21,pre,Utrecht/21/pre,✗,✗,✗,✗,3,
+Utrecht,23,orig,Utrecht/23/orig,✗,✗,✗,✗,5,
+Utrecht,23,pre,Utrecht/23/pre,✗,✗,✗,✗,3,
+Utrecht,25,orig,Utrecht/25/orig,✗,✗,✗,✗,5,
+Utrecht,25,pre,Utrecht/25/pre,✗,✗,✗,✗,3,
+Utrecht,27,orig,Utrecht/27/orig,✗,✗,✗,✗,5,
+Utrecht,27,pre,Utrecht/27/pre,✗,✗,✗,✗,3,
+Utrecht,29,orig,Utrecht/29/orig,✗,✗,✗,✗,5,
+Utrecht,29,pre,Utrecht/29/pre,✗,✗,✗,✗,3,
+Utrecht,31,orig,Utrecht/31/orig,✗,✗,✗,✗,5,
+Utrecht,31,pre,Utrecht/31/pre,✗,✗,✗,✗,3,
+Utrecht,33,orig,Utrecht/33/orig,✗,✗,✗,✗,5,
+Utrecht,33,pre,Utrecht/33/pre,✗,✗,✗,✗,3,
+Utrecht,35,orig,Utrecht/35/orig,✗,✗,✗,✗,5,
+Utrecht,35,pre,Utrecht/35/pre,✗,✗,✗,✗,3,
+Utrecht,37,orig,Utrecht/37/orig,✗,✗,✗,✗,5,
+Utrecht,37,pre,Utrecht/37/pre,✗,✗,✗,✗,3,
+Utrecht,39,orig,Utrecht/39/orig,✗,✗,✗,✗,5,
+Utrecht,39,pre,Utrecht/39/pre,✗,✗,✗,✗,3,
+Utrecht,4,orig,Utrecht/4/orig,✗,✗,✗,✗,5,
+Utrecht,4,pre,Utrecht/4/pre,✗,✗,✗,✗,3,
+Utrecht,41,orig,Utrecht/41/orig,✗,✗,✗,✗,5,
+Utrecht,41,pre,Utrecht/41/pre,✗,✗,✗,✗,3,
+Utrecht,49,orig,Utrecht/49/orig,✗,✗,✗,✗,5,
+Utrecht,49,pre,Utrecht/49/pre,✗,✗,✗,✗,3,
+Utrecht,6,orig,Utrecht/6/orig,✗,✗,✗,✗,5,
+Utrecht,6,pre,Utrecht/6/pre,✗,✗,✗,✗,3,
+Utrecht,8,orig,Utrecht/8/orig,✗,✗,✗,✗,5,
+Utrecht,8,pre,Utrecht/8/pre,✗,✗,✗,✗,3,
