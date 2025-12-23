@@ -47,7 +47,7 @@ This example demonstrates the model's strong performance on large WMH lesions wi
 ### Model Performance Analysis
 
 <p align="center">
-  <img src="nnUnet/7CH_v2_Archive/evaluation_results.png" alt="Performance Analysis" width="100%"/>
+  <img src="models/7CH_v2_Archive/evaluation_results.png" alt="Performance Analysis" width="100%"/>
 </p>
 
 **Key Insights**:
