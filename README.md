@@ -97,7 +97,8 @@ pip install -r requirements.txt
 pip install nnunetv2
 
 # 3. Download model checkpoint (⚠️ Required)
-# See: models/7CH_v2_Archive/CHECKPOINT_DOWNLOAD.md
+# Download from Google Drive:
+# https://drive.google.com/file/d/1FwVudko_dRzriAuUmhcnebiN8z25ekLE/view?usp=sharing
 # Place checkpoint_best.pth in models/7CH_v2_Archive/
 ```
 
