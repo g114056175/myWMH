@@ -8,17 +8,10 @@ Due to GitHub file size limitations (100MB max), the model checkpoint is hosted 
 
 **File**: `checkpoint_best.pth`  
 **Size**: 256 MB  
-**Download Link**: **[您需要在此處添加Google Drive或Hugging Face連結]**
+**Download Link**: [Google Drive - checkpoint_best.pth](https://drive.google.com/file/d/1FwVudko_dRzriAuUmhcnebiN8z25ekLE/view?usp=sharing)
 
-### Option 1: Google Drive
-```
-[將checkpoint上傳到Google Drive並分享連結]
-```
-
-### Option 2: Hugging Face Model Hub
-```
-[或上傳到Hugging Face: https://huggingface.co/]
-```
+### Direct Download
+Click the link above and download the file directly from Google Drive.
 
 ## 📦 Installation
 
