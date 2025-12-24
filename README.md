@@ -29,6 +29,7 @@ Our **7-Channel v2 model** achieves **0.8575 Overall Dice** on the WMH Segmentat
 - 🔬 **Novel Feature**: Butterworth high-pass filtering for small lesion detection
 - 🏆 **Multi-site Robust**: Tested on Amsterdam, Singapore, Utrecht datasets
 - 📦 **Production Ready**: Complete inference pipeline with nnU-Net v2
+- 🎮 **[Interactive Demo](https://g114056175.github.io/myWMH/output/demo_viewer.html)**: Explore 3D slices with mouse wheel navigation
 
 ---
 
