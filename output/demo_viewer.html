@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,63 +11,63 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 1600px;
             margin: 0 auto;
             background: white;
             border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             overflow: hidden;
         }
-        
+
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 30px;
             text-align: center;
         }
-        
+
         .header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
         }
-        
+
         .header p {
             font-size: 1.2em;
             opacity: 0.9;
         }
-        
+
         .controls {
             background: #f8f9fa;
             padding: 25px;
             border-bottom: 2px solid #e9ecef;
         }
-        
+
         .case-selector {
             margin-bottom: 20px;
         }
-        
+
         .case-selector label {
             font-weight: bold;
             font-size: 1.1em;
             display: block;
             margin-bottom: 10px;
         }
-        
+
         .case-buttons {
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
         }
-        
+
         .case-btn {
             padding: 12px 24px;
             border: 2px solid #667eea;
@@ -77,33 +78,33 @@
             font-weight: bold;
             transition: all 0.3s;
         }
-        
+
         .case-btn:hover {
             background: #f0f0ff;
             transform: translateY(-2px);
         }
-        
+
         .case-btn.active {
             background: #667eea;
             color: white;
         }
-        
+
         .slice-control {
             margin-top: 20px;
         }
-        
+
         .slider-container {
             display: flex;
             align-items: center;
             gap: 20px;
             margin-bottom: 15px;
         }
-        
+
         .slider-container label {
             font-weight: bold;
             min-width: 80px;
         }
-        
+
         #sliceSlider {
             flex: 1;
             height: 10px;
@@ -112,7 +113,7 @@
             outline: none;
             -webkit-appearance: none;
         }
-        
+
         #sliceSlider::-webkit-slider-thumb {
             -webkit-appearance: none;
             width: 24px;
@@ -120,23 +121,23 @@
             border-radius: 50%;
             background: #667eea;
             cursor: pointer;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         }
-        
+
         .slice-info {
             background: white;
             padding: 15px;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
             font-size: 1.2em;
         }
-        
+
         .slice-info strong {
             color: #667eea;
             font-size: 1.5em;
         }
-        
+
         .instructions {
             background: #d1ecf1;
             padding: 15px;
@@ -146,31 +147,31 @@
             text-align: center;
             font-size: 1.1em;
         }
-        
+
         .instructions strong {
             color: #0c5460;
         }
-        
+
         .viewer {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             padding: 30px;
         }
-        
+
         .view-panel {
             background: #f8f9fa;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s;
         }
-        
+
         .view-panel:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
-        
+
         .view-panel h3 {
             background: #343a40;
             color: white;
@@ -178,14 +179,14 @@
             text-align: center;
             font-size: 1.2em;
         }
-        
+
         .view-panel img {
             width: 100%;
             height: auto;
             display: block;
             background: black;
         }
-        
+
         .legend {
             background: #fff3cd;
             padding: 20px;
@@ -193,19 +194,19 @@
             border-radius: 10px;
             border-left: 5px solid #ffc107;
         }
-        
+
         .legend h4 {
             margin-bottom: 15px;
             font-size: 1.2em;
         }
-        
+
         .legend-item {
             display: inline-block;
             margin-right: 30px;
             margin-bottom: 10px;
             font-size: 1.1em;
         }
-        
+
         .legend-color {
             display: inline-block;
             width: 24px;
@@ -217,26 +218,28 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             <h1>🧠 WMH Segmentation Demo</h1>
-            <p>Interactive 3D Slice Viewer with 7CH v2 Model</p>
+            <p>Interactive 3D Slice Viewer with 7-Channel v2 Model</p>
         </div>
-        
+
         <div class="instructions">
-            <strong>💡 使用方式：</strong> 選擇病例 → 使用滑鼠滾輪 🖱️ 或拖動滑桿查看不同切片層
+            <strong>💡 How to Use:</strong> Select a case → Use mouse wheel 🖱️ or slider to navigate through different
+            slices
         </div>
-        
+
         <div class="controls">
             <div class="case-selector">
-                <label>📂 選擇病例:</label>
+                <label>📂 Select Case:</label>
                 <div class="case-buttons" id="caseButtons"></div>
             </div>
-            
+
             <div class="slice-control">
                 <div class="slider-container">
-                    <label for="sliceSlider">切片:</label>
+                    <label for="sliceSlider">Slice:</label>
                     <input type="range" id="sliceSlider" min="0" max="0" value="0" step="1">
                     <div class="slice-info">
                         <span id="sliceNumber">0</span> / <span id="totalSlices">0</span>
@@ -244,10 +247,10 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="viewer">
             <div class="view-panel">
-                <h3>FLAIR 原圖</h3>
+                <h3>FLAIR Image</h3>
                 <img id="flairImg" src="" alt="Loading...">
             </div>
             <div class="view-panel">
@@ -255,244 +258,244 @@
                 <img id="gtImg" src="" alt="Loading...">
             </div>
             <div class="view-panel">
-                <h3>FLAIR + 預測</h3>
+                <h3>FLAIR + Prediction</h3>
                 <img id="predImg" src="" alt="Loading...">
             </div>
         </div>
-        
+
         <div class="legend">
-            <h4>🎨 顏色說明:</h4>
+            <h4>🎨 Color Legend:</h4>
             <div class="legend-item">
                 <span class="legend-color" style="background: red;"></span>
-                <span><strong>紅色</strong> = WMH 病灶 / 預測</span>
+                <span><strong>Red</strong> = WMH Lesions / Prediction</span>
             </div>
             <div class="legend-item">
                 <span class="legend-color" style="background: green;"></span>
-                <span><strong>綠色</strong> = Don't Care 區域（僅GT）</span>
+                <span><strong>Green</strong> = Don't Care Region (GT only)</span>
             </div>
         </div>
     </div>
-    
+
     <script>
 
         const cases = [
-  {
-    "name": "Amsterdam_GE3T_119",
-    "dice": 0.9288444710542072,
-    "total_slices": 27,
-    "slices": [
-      "slice_042",
-      "slice_043",
-      "slice_044",
-      "slice_045",
-      "slice_046",
-      "slice_047",
-      "slice_048",
-      "slice_049",
-      "slice_050",
-      "slice_051",
-      "slice_052",
-      "slice_053",
-      "slice_054",
-      "slice_055",
-      "slice_056",
-      "slice_057",
-      "slice_058",
-      "slice_059",
-      "slice_060",
-      "slice_061",
-      "slice_062",
-      "slice_063",
-      "slice_064",
-      "slice_065",
-      "slice_066",
-      "slice_067",
-      "slice_068"
-    ]
-  },
-  {
-    "name": "Amsterdam_Philips_VU .PETMR_01__160",
-    "dice": 0.8789212473078003,
-    "total_slices": 27,
-    "slices": [
-      "slice_042",
-      "slice_043",
-      "slice_044",
-      "slice_045",
-      "slice_046",
-      "slice_047",
-      "slice_048",
-      "slice_049",
-      "slice_050",
-      "slice_051",
-      "slice_052",
-      "slice_053",
-      "slice_054",
-      "slice_055",
-      "slice_056",
-      "slice_057",
-      "slice_058",
-      "slice_059",
-      "slice_060",
-      "slice_061",
-      "slice_062",
-      "slice_063",
-      "slice_064",
-      "slice_065",
-      "slice_066",
-      "slice_067",
-      "slice_068"
-    ]
-  },
-  {
-    "name": "Amsterdam_Philips_VU .PETMR_01__169",
-    "dice": 0.8467245862134568,
-    "total_slices": 27,
-    "slices": [
-      "slice_042",
-      "slice_043",
-      "slice_044",
-      "slice_045",
-      "slice_046",
-      "slice_047",
-      "slice_048",
-      "slice_049",
-      "slice_050",
-      "slice_051",
-      "slice_052",
-      "slice_053",
-      "slice_054",
-      "slice_055",
-      "slice_056",
-      "slice_057",
-      "slice_058",
-      "slice_059",
-      "slice_060",
-      "slice_061",
-      "slice_062",
-      "slice_063",
-      "slice_064",
-      "slice_065",
-      "slice_066",
-      "slice_067",
-      "slice_068"
-    ]
-  },
-  {
-    "name": "Singapore_72",
-    "dice": 0.9238781044049779,
-    "total_slices": 48,
-    "slices": [
-      "slice_000",
-      "slice_001",
-      "slice_002",
-      "slice_003",
-      "slice_004",
-      "slice_005",
-      "slice_006",
-      "slice_007",
-      "slice_008",
-      "slice_009",
-      "slice_010",
-      "slice_011",
-      "slice_012",
-      "slice_013",
-      "slice_014",
-      "slice_015",
-      "slice_016",
-      "slice_017",
-      "slice_018",
-      "slice_019",
-      "slice_020",
-      "slice_021",
-      "slice_022",
-      "slice_023",
-      "slice_024",
-      "slice_025",
-      "slice_026",
-      "slice_027",
-      "slice_028",
-      "slice_029",
-      "slice_030",
-      "slice_031",
-      "slice_032",
-      "slice_033",
-      "slice_034",
-      "slice_035",
-      "slice_036",
-      "slice_037",
-      "slice_038",
-      "slice_039",
-      "slice_040",
-      "slice_041",
-      "slice_042",
-      "slice_043",
-      "slice_044",
-      "slice_045",
-      "slice_046",
-      "slice_047"
-    ]
-  },
-  {
-    "name": "Utrecht_9",
-    "dice": 0.8050787251970195,
-    "total_slices": 48,
-    "slices": [
-      "slice_000",
-      "slice_001",
-      "slice_002",
-      "slice_003",
-      "slice_004",
-      "slice_005",
-      "slice_006",
-      "slice_007",
-      "slice_008",
-      "slice_009",
-      "slice_010",
-      "slice_011",
-      "slice_012",
-      "slice_013",
-      "slice_014",
-      "slice_015",
-      "slice_016",
-      "slice_017",
-      "slice_018",
-      "slice_019",
-      "slice_020",
-      "slice_021",
-      "slice_022",
-      "slice_023",
-      "slice_024",
-      "slice_025",
-      "slice_026",
-      "slice_027",
-      "slice_028",
-      "slice_029",
-      "slice_030",
-      "slice_031",
-      "slice_032",
-      "slice_033",
-      "slice_034",
-      "slice_035",
-      "slice_036",
-      "slice_037",
-      "slice_038",
-      "slice_039",
-      "slice_040",
-      "slice_041",
-      "slice_042",
-      "slice_043",
-      "slice_044",
-      "slice_045",
-      "slice_046",
-      "slice_047"
-    ]
-  }
-];
-        
+            {
+                "name": "Amsterdam_GE3T_119",
+                "dice": 0.9288444710542072,
+                "total_slices": 27,
+                "slices": [
+                    "slice_042",
+                    "slice_043",
+                    "slice_044",
+                    "slice_045",
+                    "slice_046",
+                    "slice_047",
+                    "slice_048",
+                    "slice_049",
+                    "slice_050",
+                    "slice_051",
+                    "slice_052",
+                    "slice_053",
+                    "slice_054",
+                    "slice_055",
+                    "slice_056",
+                    "slice_057",
+                    "slice_058",
+                    "slice_059",
+                    "slice_060",
+                    "slice_061",
+                    "slice_062",
+                    "slice_063",
+                    "slice_064",
+                    "slice_065",
+                    "slice_066",
+                    "slice_067",
+                    "slice_068"
+                ]
+            },
+            {
+                "name": "Amsterdam_Philips_VU .PETMR_01__160",
+                "dice": 0.8789212473078003,
+                "total_slices": 27,
+                "slices": [
+                    "slice_042",
+                    "slice_043",
+                    "slice_044",
+                    "slice_045",
+                    "slice_046",
+                    "slice_047",
+                    "slice_048",
+                    "slice_049",
+                    "slice_050",
+                    "slice_051",
+                    "slice_052",
+                    "slice_053",
+                    "slice_054",
+                    "slice_055",
+                    "slice_056",
+                    "slice_057",
+                    "slice_058",
+                    "slice_059",
+                    "slice_060",
+                    "slice_061",
+                    "slice_062",
+                    "slice_063",
+                    "slice_064",
+                    "slice_065",
+                    "slice_066",
+                    "slice_067",
+                    "slice_068"
+                ]
+            },
+            {
+                "name": "Amsterdam_Philips_VU .PETMR_01__169",
+                "dice": 0.8467245862134568,
+                "total_slices": 27,
+                "slices": [
+                    "slice_042",
+                    "slice_043",
+                    "slice_044",
+                    "slice_045",
+                    "slice_046",
+                    "slice_047",
+                    "slice_048",
+                    "slice_049",
+                    "slice_050",
+                    "slice_051",
+                    "slice_052",
+                    "slice_053",
+                    "slice_054",
+                    "slice_055",
+                    "slice_056",
+                    "slice_057",
+                    "slice_058",
+                    "slice_059",
+                    "slice_060",
+                    "slice_061",
+                    "slice_062",
+                    "slice_063",
+                    "slice_064",
+                    "slice_065",
+                    "slice_066",
+                    "slice_067",
+                    "slice_068"
+                ]
+            },
+            {
+                "name": "Singapore_72",
+                "dice": 0.9238781044049779,
+                "total_slices": 48,
+                "slices": [
+                    "slice_000",
+                    "slice_001",
+                    "slice_002",
+                    "slice_003",
+                    "slice_004",
+                    "slice_005",
+                    "slice_006",
+                    "slice_007",
+                    "slice_008",
+                    "slice_009",
+                    "slice_010",
+                    "slice_011",
+                    "slice_012",
+                    "slice_013",
+                    "slice_014",
+                    "slice_015",
+                    "slice_016",
+                    "slice_017",
+                    "slice_018",
+                    "slice_019",
+                    "slice_020",
+                    "slice_021",
+                    "slice_022",
+                    "slice_023",
+                    "slice_024",
+                    "slice_025",
+                    "slice_026",
+                    "slice_027",
+                    "slice_028",
+                    "slice_029",
+                    "slice_030",
+                    "slice_031",
+                    "slice_032",
+                    "slice_033",
+                    "slice_034",
+                    "slice_035",
+                    "slice_036",
+                    "slice_037",
+                    "slice_038",
+                    "slice_039",
+                    "slice_040",
+                    "slice_041",
+                    "slice_042",
+                    "slice_043",
+                    "slice_044",
+                    "slice_045",
+                    "slice_046",
+                    "slice_047"
+                ]
+            },
+            {
+                "name": "Utrecht_9",
+                "dice": 0.8050787251970195,
+                "total_slices": 48,
+                "slices": [
+                    "slice_000",
+                    "slice_001",
+                    "slice_002",
+                    "slice_003",
+                    "slice_004",
+                    "slice_005",
+                    "slice_006",
+                    "slice_007",
+                    "slice_008",
+                    "slice_009",
+                    "slice_010",
+                    "slice_011",
+                    "slice_012",
+                    "slice_013",
+                    "slice_014",
+                    "slice_015",
+                    "slice_016",
+                    "slice_017",
+                    "slice_018",
+                    "slice_019",
+                    "slice_020",
+                    "slice_021",
+                    "slice_022",
+                    "slice_023",
+                    "slice_024",
+                    "slice_025",
+                    "slice_026",
+                    "slice_027",
+                    "slice_028",
+                    "slice_029",
+                    "slice_030",
+                    "slice_031",
+                    "slice_032",
+                    "slice_033",
+                    "slice_034",
+                    "slice_035",
+                    "slice_036",
+                    "slice_037",
+                    "slice_038",
+                    "slice_039",
+                    "slice_040",
+                    "slice_041",
+                    "slice_042",
+                    "slice_043",
+                    "slice_044",
+                    "slice_045",
+                    "slice_046",
+                    "slice_047"
+                ]
+            }
+        ];
+
         let currentCaseIndex = 0;
         let currentSliceIndex = 0;
-        
+
         const slider = document.getElementById('sliceSlider');
         const sliceNumber = document.getElementById('sliceNumber');
         const totalSlices = document.getElementById('totalSlices');
@@ -500,58 +503,63 @@
         const gtImg = document.getElementById('gtImg');
         const predImg = document.getElementById('predImg');
         const caseButtonsContainer = document.getElementById('caseButtons');
-        
+
         // 創建病例按鈕
         function createCaseButtons() {
             caseButtonsContainer.innerHTML = '';
             cases.forEach((caseData, index) => {
                 const btn = document.createElement('button');
                 btn.className = 'case-btn';
-                btn.textContent = `${caseData.name} (Dice: ${caseData.dice.toFixed(4)})`;
+                // Add slice range info for Amsterdam cases
+                let displayName = caseData.name;
+                if (caseData.name.startsWith('Amsterdam')) {
+                    displayName += ' (slices 42-68)';
+                }
+                btn.textContent = `${displayName} (Dice: ${caseData.dice.toFixed(4)})`;
                 btn.onclick = () => selectCase(index);
                 if (index === 0) btn.classList.add('active');
                 caseButtonsContainer.appendChild(btn);
             });
         }
-        
+
         // 選擇病例
         function selectCase(index) {
             currentCaseIndex = index;
             currentSliceIndex = 0;
-            
+
             // 更新按鈕狀態
             document.querySelectorAll('.case-btn').forEach((btn, i) => {
                 btn.classList.toggle('active', i === index);
             });
-            
+
             // 更新滑桿
             const caseData = cases[currentCaseIndex];
             slider.max = caseData.total_slices - 1;
             slider.value = 0;
             totalSlices.textContent = caseData.total_slices - 1;
-            
+
             updateViewer();
         }
-        
+
         // 更新圖片顯示
         function updateViewer() {
             const caseData = cases[currentCaseIndex];
             const sliceName = caseData.slices[currentSliceIndex];
             const caseName = caseData.name;
-            
+
             flairImg.src = `demo_cases/${caseName}/1_flair/${sliceName}.png`;
             gtImg.src = `demo_cases/${caseName}/2_flair_groundtruth/${sliceName}.png`;
             predImg.src = `demo_cases/${caseName}/3_flair_prediction/${sliceName}.png`;
-            
+
             sliceNumber.textContent = sliceName.replace('slice_', '');
         }
-        
+
         // 滑桿事件
         slider.addEventListener('input', (e) => {
             currentSliceIndex = parseInt(e.target.value);
             updateViewer();
         });
-        
+
         // 滑鼠滾輪控制
         document.addEventListener('wheel', (e) => {
             e.preventDefault();
@@ -562,7 +570,7 @@
             slider.value = newValue;
             updateViewer();
         }, { passive: false });
-        
+
         // 鍵盤控制
         document.addEventListener('keydown', (e) => {
             const caseData = cases[currentCaseIndex];
@@ -576,11 +584,12 @@
                 updateViewer();
             }
         });
-        
+
         // 初始化
         createCaseButtons();
         selectCase(0);
 
     </script>
 </body>
+
 </html>
