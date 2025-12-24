@@ -1,0 +1,13 @@
+{
+  "case_name": "Amsterdam_Philips_VU .PETMR_01__160",
+  "dice": 0.8789212473078003,
+  "tp": 23465,
+  "fp": 4186,
+  "fn": 2279,
+  "total_slices": 83,
+  "shape": [
+    321,
+    240,
+    83
+  ]
+}

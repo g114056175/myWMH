@@ -1,0 +1,72 @@
+{
+  "total_cases": 5,
+  "cases": [
+    {
+      "case_name": "Amsterdam_GE3T_119",
+      "dice": 0.9288444710542072,
+      "tp": 10084,
+      "fp": 460,
+      "fn": 1085,
+      "total_slices": 83,
+      "shape": [
+        132,
+        256,
+        83
+      ]
+    },
+    {
+      "case_name": "Amsterdam_Philips_VU .PETMR_01__160",
+      "dice": 0.8789212473078003,
+      "tp": 23465,
+      "fp": 4186,
+      "fn": 2279,
+      "total_slices": 83,
+      "shape": [
+        321,
+        240,
+        83
+      ]
+    },
+    {
+      "case_name": "Amsterdam_Philips_VU .PETMR_01__169",
+      "dice": 0.8467245862134568,
+      "tp": 6676,
+      "fp": 1032,
+      "fn": 1385,
+      "total_slices": 83,
+      "shape": [
+        321,
+        240,
+        83
+      ]
+    },
+    {
+      "case_name": "Utrecht_9",
+      "dice": 0.8050787251970195,
+      "tp": 48729,
+      "fp": 1494,
+      "fn": 22102,
+      "total_slices": 48,
+      "shape": [
+        240,
+        240,
+        48
+      ]
+    },
+    {
+      "case_name": "Singapore_72",
+      "dice": 0.9238781044049779,
+      "tp": 25724,
+      "fp": 3126,
+      "fn": 1113,
+      "total_slices": 48,
+      "shape": [
+        232,
+        256,
+        48
+      ]
+    }
+  ],
+  "model": "7CH v2 (Butterworth)",
+  "output_directory": "D:\\VSCode\\AIOT_E1\\output\\demo_cases"
+}
