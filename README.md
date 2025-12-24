@@ -6,13 +6,13 @@
 [![Sensitivity](https://img.shields.io/badge/Sensitivity-0.8405-blue)](models/7CH_v2_Archive/)
 [![Framework](https://img.shields.io/badge/Framework-nnUNet%20v2-orange)](https://github.com/MIC-DKFZ/nnUNet)
 
-## 📥 Model Checkpoint Download
+---
 
-**[⬇️ Download checkpoint_best.pth (256 MB) from Google Drive](https://drive.google.com/file/d/1FwVudko_dRzriAuUmhcnebiN8z25ekLE/view?usp=sharing)**
+## 🎮 Interactive Demo
 
-- **File Size**: 256 MB
-- **Performance**: Overall Dice 0.8575, Sensitivity 0.8405
-- **Installation**: Place in `models/7CH_v2_Archive/checkpoint_best.pth`
+**[👉 Click here to explore the Interactive 3D Slice Viewer](https://g114056175.github.io/myWMH/output/demo_viewer.html)**
+
+Navigate through brain MRI slices using your mouse wheel and see real-time predictions from our 7-Channel nnU-Net model. Compare FLAIR images, ground truth, and model predictions side-by-side across 5 test cases.
 
 ---
 
@@ -29,7 +29,6 @@ Our **7-Channel v2 model** achieves **0.8575 Overall Dice** on the WMH Segmentat
 - 🔬 **Novel Feature**: Butterworth high-pass filtering for small lesion detection
 - 🏆 **Multi-site Robust**: Tested on Amsterdam, Singapore, Utrecht datasets
 - 📦 **Production Ready**: Complete inference pipeline with nnU-Net v2
-- 🎮 **[Interactive Demo](https://g114056175.github.io/myWMH/output/demo_viewer.html)**: Explore 3D slices with mouse wheel navigation
 
 ---
 
